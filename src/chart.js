@@ -30,4 +30,4 @@ export const UserData = [
     userLost: 234,
   },
 ];
-// export default UserData;
+export default UserData;

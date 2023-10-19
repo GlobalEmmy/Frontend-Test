@@ -4,7 +4,7 @@ import LineChart from "../../components/Linechart";
 // import profile from "../../image/_header.png";
 import Header from "../../components/Header";
 import "./overview.css";
-import { UserData } from "../../chart";
+import  UserData  from "../../chart";
 
 
 
@@ -21,7 +21,7 @@ const Overview = () => {
   return (
     <>
       <Header />
-      <LineChart chartData={userData} />
+      {/* <LineChart chartData={userData} /> */}
     </>
   );
 };
