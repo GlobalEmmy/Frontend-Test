@@ -1,0 +1,24 @@
+.top1 {
+  /* border: 1px solid green; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  gap: 53rem;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  /* border: 1px solid black; */
+}
+.profile-container .icon {
+  display: flex;
+  gap: 1rem;
+}
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  /* border: 1px solid black; */
+}

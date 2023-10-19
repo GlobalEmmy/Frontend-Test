@@ -1,9 +1,9 @@
 import { useState } from "react";
 import {SiVectorworks} from "react-icons/si";
-import Logo from "../../image/logo.png";
+import Logo from "../image/logo.png";
 import "./sidebar.css"
 import { NavLink } from "react-router-dom";
-import links from "../../data"
+import links from "../data"
 
 const Sidebar = () => {
           const [isNavShowing, setIsNavShowing] = useState(false);
