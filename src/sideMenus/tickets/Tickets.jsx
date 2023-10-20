@@ -8,7 +8,7 @@ import ticket7 from "../../image/7.png";
 import ticket8 from "../../image/8.png";
 import "./tickets.css";
 import { BiDotsVerticalRounded } from "react-icons/bi";
-import Header from "../../components/Header";
+import Header from "../../components/HeaderTicket";
 import '../../index'
 
 const Tickets = () => {
