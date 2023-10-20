@@ -1,6 +1,6 @@
 .ticket-heading {
   display: flex;
-  gap: 8rem;
+  gap: 15rem;
 }
 .ticket-only {
   background: #fff;
