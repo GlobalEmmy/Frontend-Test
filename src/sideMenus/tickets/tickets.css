@@ -1,16 +1,48 @@
 .ticket-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+ 
+}
+.ticket-only {
+  background: #fff;
+ display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ width: 100%;
+ align-items: center;
+ margin-bottom: 1rem;
+ border-radius: 0.6rem;
+ width: 95%;
+}
+.ticket-only p {
+  font-size: 0.6rem;
+  width: 100%;
+}
+.ticket-title{
+ padding: 1rem;
+ margin-right: 43rem;
+  
+}
+.ticket-brief {
+  width: 100%;
 }
 .ticket-heading {
   display: flex;
-  gap: 10rem;
+  gap: 8rem;
 }
 .ticket__detail-1 {
+  /* background: #fff; */
   display: flex;
-  gap: 2rem;
-  border-bottom: 1px solid rgb(178, 173, 173);
+  gap: 4rem;
+  padding: 1rem;
   width: 100%;
+  /* justify-content: center; */
+  align-items: center;
 
 }
+.ticket__detail-1:hover {
+  cursor: pointer;
+  background: transparent;
+}
+
+

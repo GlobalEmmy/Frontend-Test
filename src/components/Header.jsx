@@ -1,20 +1,21 @@
 
-import { SiVectorworks } from "react-icons/si";
+import { IoMdNotifications } from "react-icons/io";
+import { BsSearch } from "react-icons/bs";
 import profile from "../image/_header.png";
 import "./header.css";
 import "../index.css";
 
 const Header = () => {
   return (
-    <div className="container right">
+    <div className="container-header">
       <div className="top1">
         <div className="header-capture">
         <p>Overview</p>
         </div>
         <div className="profile-container">
           <div className="icon">
-            <span>{<SiVectorworks />}</span>
-            <span>{<SiVectorworks />}</span>
+            <span>{<BsSearch />}</span>
+            <span>{<IoMdNotifications />}</span>
           </div>
           <div className="profile-info">
             <small>Jones Ferdinand</small>

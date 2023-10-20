@@ -1,19 +1,24 @@
+.container-header {
+
+}
 .top1 {
-  /* border: 1px solid green; */
   height: 5rem;
   display: flex;
   align-items: center;
-  gap: 53rem;
+  gap: 29rem;
 }
 .profile-container {
   display: flex;
   align-items: center;
   gap: 1rem;
-  /* border: 1px solid black; */
+  width: 100%;
+  padding: 0 2rem;
 }
 .profile-container .icon {
   display: flex;
   gap: 1rem;
+  margin-right: 2rem;
+  color: rgb(173, 166, 166);
 }
 .profile-info {
   display: flex;

@@ -1,0 +1,58 @@
+/* Top cards */
+.cards-container1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  text-align: center;
+  width: 700px;
+  transition: all 300ms ease;
+}
+.cards-container1 .card {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+
+}
+.cards-container1 .card:hover {
+  cursor: pointer;
+  border: 1px solid blue;
+}
+.cards-container1 .card:hover p {
+  color: blue;
+}
+
+/* Bottom Cards */
+.container-card2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.container-card2 .card2__1 {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.75rem;
+
+}
+
+.card2__1 {
+  background: #fff;
+}
+.container-card2 .card2__1 .top,
+.container-card2 .card2__1 .others {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+.container-card2 .card2__1 .others {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px solid rgb(230, 220, 220);
+}
+.view {
+  color: blue;
+}

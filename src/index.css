@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 /* ----------------------- ROOT VARIABLES --------------------------- */
 :root {
-  --color-primary: #7380ec;
+  --color-primary: #fff;
   --color-danger: #ff7782;
   --color-success: #41f1b6;
   --color-warning: #ffbb55;
@@ -69,6 +69,17 @@ body {
 a {
   color: var(--color-dark);
 }
+input {
+  background: #fff;
+  border: 1px solid gray;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+input:hover {
+  cursor: pointer;
+  background: blue;
+}
 img {
   display: block;
   width: 100%;
@@ -93,8 +104,8 @@ small {
   font-size: 0.75rem;
 }
 .profile-photo {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 1.8rem;
+  height: 1.8rem;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -120,4 +131,28 @@ b {
 
 .warning {
   color: var(--color-warning);
+}
+.High {
+  background: red;
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: #fff;
+}
+.Low {
+  background: var(--color-warning);
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: #fff;
+}
+.Normal {
+  background: var(--color-success);
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: #fff;
+}
+.Default {
+  background: var(--color-light);
+  padding: 3px 8px;
+  border-radius: 8px;
+  color: gray;
 }
