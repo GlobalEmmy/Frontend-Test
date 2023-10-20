@@ -137,18 +137,21 @@ b {
   padding: 3px 8px;
   border-radius: 8px;
   color: #fff;
+  width: 3rem;
 }
 .Low {
   background: var(--color-warning);
   padding: 3px 8px;
   border-radius: 8px;
   color: #fff;
+  width: 3rem;
 }
 .Normal {
   background: var(--color-success);
   padding: 3px 8px;
   border-radius: 8px;
   color: #fff;
+  width: 5rem;
 }
 .Default {
   background: var(--color-light);

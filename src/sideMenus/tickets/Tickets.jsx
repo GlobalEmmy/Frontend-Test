@@ -10,6 +10,7 @@ import "./tickets.css";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import Header from "../../components/HeaderTicket";
 import '../../index'
+import "../../index.css"
 
 const Tickets = () => {
   return (
@@ -23,194 +24,209 @@ const Tickets = () => {
     
         <div className="ticket-heading">
           <p>Ticket details</p>
-          <p>Customer name</p>
+          <p className="customer-name">Customer name</p>
           <p>Date</p>
           <p>Priority</p>
         </div>
 
-        {/* Ticket 1 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket1} alt="" />
-          <div className="ticket-detail">
+        <table>
+      <tbody>
+        {/* <!-- Ticket 1 --> */}
+        <tr>
+          <td className="cell1">
+            <img src={ticket1} alt="img"  className="profile-photo " />
+          </td>
+          <td className="cell2">
             <p>Contact Email not Linked</p>
-            <p>Updated 1 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 1 day ago</small>
+          </td>
+          <td>
             <p>Tom Cruise</p>
-            <p>on 25.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 26, 2019</p>
-            <p>6:30 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 25.05.2019</small>
+          </td>
+          <td>
+            <p>May 26, 2019</p>
+            <small>6:30 PM</small>
+          </td>
+          <td className="priority">
             <p className="High">HIGH</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
+          </td>
+          <td>
+            <BiDotsVerticalRounded  />
+          </td>
+        </tr>
 
-        {/* Ticket 2 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket2} alt="" />
-          <div className="ticket-detail">
+        {/* <!-- Ticket 2 --> */}
+        <tr>
+          <td>
+          <img src={ticket2} alt="img"  className="profile-photo " />
+          </td>
+          <td>
             <p className="ticket-brief">Adding Images to Featured Posts</p>
-            <p>Updated 1 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 1 day ago</small>
+          </td>
+          <td>
             <p>Matt Damon</p>
-            <p>on 24.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 26, 2019</p>
-            <p>8:00 AM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 24.05.2019</small>
+          </td>
+          <td>
+            <p>May 26, 2019</p>
+            <small>8:00 AM</small>
+          </td>
+          <td>
             <p className="Low">LOW</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 3 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket3} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 3 --> */}
+        <tr>
+          <td>
+          <img src={ticket3} alt="img"  className="profile-photo " />
+          </td>
+          <td>
             <p className="ticket-brief">When will I be charged this month?</p>
-            <p>Updated 1 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 1 day ago</small>
+          </td>
+          <td>
             <p>Robert Downey</p>
             <p>on 24.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 26, 2019</p>
-            <p>7:30 PM</p>
-          </div>
-          <div className="ticket-status">
+          </td>
+          <td>
+            <p>May 26, 2019</p>
+            <small>7:30 PM</small>
+          </td>
+          <td>
             <p className="High">HIGH</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 4 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket4} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 4 --> */}
+        <tr>
+          <td>
+          <img src={ticket4} alt="img"  className="profile-photo "/>
+          </td>
+          <td>
             <p className="ticket-brief">Payment not going through</p>
-            <p>Updated 2 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 2 day ago</small>
+          </td>
+          <td>
             <p>Christian Bale</p>
-            <p>on 24.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 25, 2019</p>
-            <p>5:00 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 24.05.2019</small>
+          </td>
+          <td>
+            <p>May 25, 2019</p>
+            <small>5:00 PM</small>
+          </td>
+          <td>
             <p className="Normal">NORMAL</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 5 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket5} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 5 --> */}
+        <tr>
+          <td>
+          <img src={ticket5} alt="img"  className="profile-photo " />
+          </td>
+          <td>
             <p className="ticket-brief">Unable to add replies</p>
-            <p>Updated 2 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 2 day ago</small>
+          </td>
+          <td>
             <p>Henry Cavil</p>
-            <p>on 24.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 25, 2019</p>
-            <p>4:00 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 24.05.2019</small>
+          </td>
+          <td>
+            <p>May 25, 2019</p>
+            <small>4:00 PM</small>
+          </td>
+          <td>
             <p className="High">HIGH</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 6 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket6} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 6 --> */}
+        <tr>
+          <td>
+          <img src={ticket6} alt="img"  className="profile-photo "/>
+          </td>
+          <td>
             <p className="ticket-brief">Downtime since last week</p>
-            <p>Updated 3 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 3 day ago</small>
+          </td>
+          <td>
             <p>Chris Evans</p>
-            <p>on 23.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 25, 2019</p>
-            <p>6:30 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 23.05.2019</small>
+          </td>
+          <td>
+            <p>May 25, 2019</p>
+            <small>6:30 PM</small>
+          </td>
+          <td>
             <p className="Normal">NORMAL</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 7 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket7} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 7 --> */}
+        <tr>
+          <td>
+          <img src={ticket7} alt="img"  className="profile-photo "/>
+          </td>
+          <td>
             <p>Referall Bonus</p>
-            <p>Updated 4 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 4 day ago</small>
+          </td>
+          <td>
             <p>Sam Smith</p>
-            <p>on 22.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 25, 2019</p>
-            <p>2:00 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 22.05.2019</small>
+          </td>
+          <td>
+            <p>May 25, 2019</p>
+            <small>2:00 PM</small>
+          </td>
+          <td>
             <p className="Low">LOW</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
-
-        {/* Ticket 8 */}
-        <div className="ticket__detail-1">
-          <img className="profile-photo" src={ticket8} alt="" />
-          <div className="ticket-detail">
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+        {/* <!-- Ticket 8 --> */}
+        <tr>
+          <td>
+          <img src={ticket8} alt="img"  className="profile-photo "/>
+          </td>
+          <td>
             <p className="ticket-brief">How do I change my password</p>
-            <p>Updated 6 day ago</p>
-          </div>
-          <div className="ticket-bio">
+            <small>Updated 6 day ago</small>
+          </td>
+          <td>
             <p>Steve Rogers</p>
-            <p>on 21.05.2019</p>
-          </div>
-          <div className="ticket-date">
-            <p> May 24, 2019</p>
-            <p>1:00 PM</p>
-          </div>
-          <div className="ticket-status">
+            <small>on 21.05.2019</small>
+          </td>
+          <td>
+            <p>May 24, 2019</p>
+            <small>1:00 PM</small>
+          </td>
+          <td>
             <p className="Normal">NORMAL</p>
-          </div>
-          <span>
-            <BiDotsVerticalRounded />
-          </span>
-        </div>
+          </td>
+          <td>
+          <BiDotsVerticalRounded  />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
       </div>
     </div>
   );
